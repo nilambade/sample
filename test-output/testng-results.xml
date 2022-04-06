@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="11" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-08T08:32:05Z" name="SampleSpentra" finished-at="2021-02-08T08:36:07Z" duration-ms="242155">
+    <groups>
+    </groups>
+    <test started-at="2021-02-08T08:32:05Z" name="Spentra" finished-at="2021-02-08T08:36:07Z" duration-ms="242155">
+      <class name="com.functional.tests.AddEmp">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:03:14Z" name="beforeClass" finished-at="2021-02-08T14:03:14Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToAddEmployee()[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:03:14Z" name="navigateToAddEmployee" finished-at="2021-02-08T14:03:30Z" duration-ms="16214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAddEmployee -->
+        <test-method signature="addEmployeeDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:03:31Z" name="addEmployeeDetails" data-provider="EmployeeInformation" finished-at="2021-02-08T14:04:10Z" duration-ms="39642" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test_Ava]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ava]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2222]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543212]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testauto1@mailinator.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2527 Decatur]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Apt 40]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Denver]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [This Mobile Number is already in use.] but found [Employee added successfully.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [This Mobile Number is already in use.] but found [Employee added successfully.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.pages.AddEmpPage.verifyMessage(AddEmpPage.java:173)
+	at com.functional.tests.AddEmp.addEmployeeDetails(AddEmp.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.framework.Setup.executeTest(Setup.java:39)
+	at com.framework.Start.main(Start.java:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method signature="addEmployeeDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:04:11Z" name="addEmployeeDetails" data-provider="EmployeeInformation" finished-at="2021-02-08T14:04:41Z" duration-ms="30519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test_Josh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Josh]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Miller]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[3333]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[7611272066]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testauto9@mailinator.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[6567 Decatur]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Apt90]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Denver]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[67890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method signature="addEmployeeDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:04:41Z" name="addEmployeeDetails" data-provider="EmployeeInformation" finished-at="2021-02-08T14:05:07Z" duration-ms="25625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test_Jessy]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jessy]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[David]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9809765555]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testauto5@mailinator.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1002 Decatur]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Apt67]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Denver]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[98765]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method signature="addEmployeeDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:05:07Z" name="addEmployeeDetails" data-provider="EmployeeInformation" finished-at="2021-02-08T14:05:41Z" duration-ms="34439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test_Jhon]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Jhon]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Jonson]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[5555]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[7654984567]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testauto4@mailinator.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[8888 Decatur]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Apt03]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Denver]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method signature="addEmployeeDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:05:41Z" name="addEmployeeDetails" data-provider="EmployeeInformation" finished-at="2021-02-08T14:06:07Z" duration-ms="25695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test_Kevin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kevin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Smith]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[7645000000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testauto66@mailinator.com]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[9988 Decatur]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Apt09]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Denver]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[98700]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.functional.tests.AddEmp@304a9d7b]" started-at="2021-02-08T14:06:07Z" name="afterClass" finished-at="2021-02-08T14:06:07Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.functional.tests.AddEmp -->
+      <class name="com.functional.tests.Login">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:05Z" name="beforeClass" finished-at="2021-02-08T14:02:05Z" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:08Z" name="negativeLoginTest" data-provider="EmployeeInfo" finished-at="2021-02-08T14:02:19Z" duration-ms="11681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[cgd]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[435]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest -->
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:19Z" name="negativeLoginTest" data-provider="EmployeeInfo" finished-at="2021-02-08T14:02:32Z" duration-ms="12997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test@wrr.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest -->
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:32Z" name="negativeLoginTest" data-provider="EmployeeInfo" finished-at="2021-02-08T14:02:44Z" duration-ms="11218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Testrig_123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest -->
+        <test-method signature="negativeLoginTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:44Z" name="negativeLoginTest" data-provider="EmployeeInfo" finished-at="2021-02-08T14:02:57Z" duration-ms="13021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test101@mailinator.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLoginTest -->
+        <test-method signature="logintoApplication()[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:02:57Z" name="logintoApplication" finished-at="2021-02-08T14:03:14Z" duration-ms="17606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoApplication -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:03:14Z" name="afterClass" finished-at="2021-02-08T14:03:14Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.functional.tests.Login@5aa6202e]" started-at="2021-02-08T14:06:08Z" name="afterSuite" finished-at="2021-02-08T14:06:08Z" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.functional.tests.Login -->
+    </test> <!-- Spentra -->
+  </suite> <!-- SampleSpentra -->
+</testng-results>

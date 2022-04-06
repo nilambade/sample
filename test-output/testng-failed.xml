@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SampleSpentra]">
+  <listeners>
+    <listener class-name="com.common.TestListener"/>
+  </listeners>
+  <test name="Spentra(failed)">
+    <classes>
+      <class name="com.functional.tests.Login">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.functional.tests.Login -->
+      <class name="com.functional.tests.AddEmp">
+        <methods>
+          <include name="afterClass"/>
+          <include name="addEmployeeDetails" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.functional.tests.AddEmp -->
+    </classes>
+  </test> <!-- Spentra(failed) -->
+</suite> <!-- Failed suite [SampleSpentra] -->

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-SampleSpentra" class="navigator-link">
+              <span class="suite-name border-failed">SampleSpentra</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-SampleSpentra" class="navigator-link ">
+                    <span>C:\Users\2829\eclipse-workspace\SampleSpentra\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-SampleSpentra" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-SampleSpentra" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-SampleSpentra" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-SampleSpentra" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-SampleSpentra" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-SampleSpentra" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SampleSpentra" class="hide-methods failed suite-SampleSpentra"> (hide)</a> <!-- hide-methods failed suite-SampleSpentra -->
+                      <a href="#" panel-name="suite-SampleSpentra" class="show-methods failed suite-SampleSpentra"> (show)</a> <!-- show-methods failed suite-SampleSpentra -->
+                    </span>
+                    <div class="method-list-content failed suite-SampleSpentra">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="addEmployeeDetails(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver...)">addEmployeeDetails(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SampleSpentra -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SampleSpentra" class="hide-methods passed suite-SampleSpentra"> (hide)</a> <!-- hide-methods passed suite-SampleSpentra -->
+                      <a href="#" panel-name="suite-SampleSpentra" class="show-methods passed suite-SampleSpentra"> (show)</a> <!-- show-methods passed suite-SampleSpentra -->
+                    </span>
+                    <div class="method-list-content passed suite-SampleSpentra">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="addEmployeeDetails(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, De...)">addEmployeeDetails(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, De...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="addEmployeeDetails(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denv...)">addEmployeeDetails(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="addEmployeeDetails(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Den...)">addEmployeeDetails(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Den...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="addEmployeeDetails(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denv...)">addEmployeeDetails(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.Login" class="method navigator-link" hash-for-method="logintoApplication">logintoApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.AddEmp" class="method navigator-link" hash-for-method="navigateToAddEmployee">navigateToAddEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.Login" class="method navigator-link" hash-for-method="negativeLoginTest(4, y, , Testrig_123)">negativeLoginTest(4, y, , Testrig_123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.Login" class="method navigator-link" hash-for-method="negativeLoginTest(2, y, cgd, 435)">negativeLoginTest(2, y, cgd, 435)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.Login" class="method navigator-link" hash-for-method="negativeLoginTest(3, y, test@wrr.com, )">negativeLoginTest(3, y, test@wrr.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SampleSpentra" title="com.functional.tests.Login" class="method navigator-link" hash-for-method="negativeLoginTest(5, y, test101@mailinator.com, )">negativeLoginTest(5, y, test101@mailinator.com, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SampleSpentra -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SampleSpentra" class="panel SampleSpentra">
+          <div class="suite-SampleSpentra-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.functional.tests.AddEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDetails(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver...)">
+                  </a> <!-- addEmployeeDetails(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver...) -->
+                  <span class="method-name">addEmployeeDetails</span>
+                  <span class="parameters">(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver, 12345)</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: expected [This Mobile Number is already in use.] but found [Employee added successfully.]
+	at com.pages.AddEmpPage.verifyMessage(AddEmpPage.java:173)
+	at com.functional.tests.AddEmp.addEmployeeDetails(AddEmp.java:29)
+	at com.framework.Setup.executeTest(Setup.java:39)
+	at com.framework.Start.main(Start.java:23)
+... Removed 26 stack frames<br/> java.lang.AssertionError: expected [This Mobile Number is already in use.] but found [Employee added successfully.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.pages.AddEmpPage.verifyMessage(AddEmpPage.java:173)
+	at com.functional.tests.AddEmp.addEmployeeDetails(AddEmp.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.framework.Setup.executeTest(Setup.java:39)
+	at com.framework.Start.main(Start.java:23)
+"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertEquals(Assert.java:123)<br>org.testng.Assert.assertEquals(Assert.java:176)<br>org.testng.Assert.assertEquals(Assert.java:186)<br>com.pages.AddEmpPage.verifyMessage(AddEmpPage.java:173)<br>com.functional.tests.AddEmp.addEmployeeDetails(AddEmp.java:29)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:564)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>com.framework.Setup.executeTest(Setup.java:39)<br>com.framework.Start.main(Start.java:23)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSpentra-class-failed -->
+          <div class="suite-SampleSpentra-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.functional.tests.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logintoApplication">
+                  </a> <!-- logintoApplication -->
+                  <span class="method-name">logintoApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeLoginTest(4, y, , Testrig_123)">
+                  </a> <!-- negativeLoginTest(4, y, , Testrig_123) -->
+                  <span class="method-name">negativeLoginTest</span>
+                  <span class="parameters">(4, y, , Testrig_123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeLoginTest(2, y, cgd, 435)">
+                  </a> <!-- negativeLoginTest(2, y, cgd, 435) -->
+                  <span class="method-name">negativeLoginTest</span>
+                  <span class="parameters">(2, y, cgd, 435)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeLoginTest(3, y, test@wrr.com, )">
+                  </a> <!-- negativeLoginTest(3, y, test@wrr.com, ) -->
+                  <span class="method-name">negativeLoginTest</span>
+                  <span class="parameters">(3, y, test@wrr.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="negativeLoginTest(5, y, test101@mailinator.com, )">
+                  </a> <!-- negativeLoginTest(5, y, test101@mailinator.com, ) -->
+                  <span class="method-name">negativeLoginTest</span>
+                  <span class="parameters">(5, y, test101@mailinator.com, )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSpentra-class-passed -->
+          <div class="suite-SampleSpentra-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.functional.tests.AddEmp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDetails(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, De...)">
+                  </a> <!-- addEmployeeDetails(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, De...) -->
+                  <span class="method-name">addEmployeeDetails</span>
+                  <span class="parameters">(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, Denver, 98700)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDetails(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denv...)">
+                  </a> <!-- addEmployeeDetails(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denv...) -->
+                  <span class="method-name">addEmployeeDetails</span>
+                  <span class="parameters">(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denver, 67890)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDetails(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Den...)">
+                  </a> <!-- addEmployeeDetails(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Den...) -->
+                  <span class="method-name">addEmployeeDetails</span>
+                  <span class="parameters">(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Denver, 98765)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeDetails(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denv...)">
+                  </a> <!-- addEmployeeDetails(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denv...) -->
+                  <span class="method-name">addEmployeeDetails</span>
+                  <span class="parameters">(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denver, 54321)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToAddEmployee">
+                  </a> <!-- navigateToAddEmployee -->
+                  <span class="method-name">navigateToAddEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SampleSpentra-class-passed -->
+        </div> <!-- panel SampleSpentra -->
+        <div panel-name="test-xml-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2829\eclipse-workspace\SampleSpentra\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SampleSpentra&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.common.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Spentra&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.functional.tests.Login&quot;/&gt;
+      &lt;class name=&quot;com.functional.tests.AddEmp&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Spentra --&gt;
+&lt;/suite&gt; &lt;!-- SampleSpentra --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SampleSpentra</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Spentra (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SampleSpentra</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SampleSpentra</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SampleSpentra');
+function tableData_SampleSpentra() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addEmployeeDetails')
+data.setCell(0, 2, 'com.functional.tests.AddEmp')
+data.setCell(0, 3, 39642);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addEmployeeDetails')
+data.setCell(1, 2, 'com.functional.tests.AddEmp')
+data.setCell(1, 3, 34439);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addEmployeeDetails')
+data.setCell(2, 2, 'com.functional.tests.AddEmp')
+data.setCell(2, 3, 30519);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addEmployeeDetails')
+data.setCell(3, 2, 'com.functional.tests.AddEmp')
+data.setCell(3, 3, 25695);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addEmployeeDetails')
+data.setCell(4, 2, 'com.functional.tests.AddEmp')
+data.setCell(4, 3, 25625);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'logintoApplication')
+data.setCell(5, 2, 'com.functional.tests.Login')
+data.setCell(5, 3, 17606);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToAddEmployee')
+data.setCell(6, 2, 'com.functional.tests.AddEmp')
+data.setCell(6, 3, 16214);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'negativeLoginTest')
+data.setCell(7, 2, 'com.functional.tests.Login')
+data.setCell(7, 3, 13021);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'negativeLoginTest')
+data.setCell(8, 2, 'com.functional.tests.Login')
+data.setCell(8, 3, 12997);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'negativeLoginTest')
+data.setCell(9, 2, 'com.functional.tests.Login')
+data.setCell(9, 3, 11681);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'negativeLoginTest')
+data.setCell(10, 2, 'com.functional.tests.Login')
+data.setCell(10, 3, 11218);
+window.suiteTableData['SampleSpentra']= { tableData: data, tableDiv: 'times-div-SampleSpentra'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-SampleSpentra">
+              </div> <!-- times-div-SampleSpentra -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SampleSpentra</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.functional.tests.AddEmp</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SampleSpentra" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.functional.tests.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">negativeLoginTest(2, y, cgd, 435)</span>
+                <span class="method-start">2525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeLoginTest(3, y, test@wrr.com, )</span>
+                <span class="method-start">14206 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeLoginTest(4, y, , Testrig_123)</span>
+                <span class="method-start">27203 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">negativeLoginTest(5, y, test101@mailinator.com, )</span>
+                <span class="method-start">38421 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logintoApplication</span>
+                <span class="method-start">51443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">69050 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.functional.tests.AddEmp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">69053 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">navigateToAddEmployee</span>
+                <span class="method-start">69061 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployeeDetails(2, y, test_Ava, Ava, Smith, 2222, 9876543212, testauto1@mailinator.com, 2527 Decatur, Apt 40, Denver...)</span>
+                <span class="method-start">85443 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDetails(3, y, test_Josh, Josh, Miller, 3333, 7611272066, testauto9@mailinator.com, 6567 Decatur, Apt90, Denv...)</span>
+                <span class="method-start">125560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDetails(4, y, test_Jessy, Jessy, David, 4444, 9809765555, testauto5@mailinator.com, 1002 Decatur, Apt67, Den...)</span>
+                <span class="method-start">156079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDetails(5, y, test_Jhon, Jhon, Jonson, 5555, 7654984567, testauto4@mailinator.com, 8888 Decatur, Apt03, Denv...)</span>
+                <span class="method-start">181704 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addEmployeeDetails(6, y, test_Kevin, Kevin, Smith, 9999, 7645000000, testauto66@mailinator.com, 9988 Decatur, Apt09, De...)</span>
+                <span class="method-start">216143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">241838 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.functional.tests.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">242463 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

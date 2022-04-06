@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MeetRibbon">
+
+	<listeners>
+		<listener class-name="com.common.TestListener" />
+	</listeners>
+
+	<test name="Shopee Object">
+		<classes>
+			<class name="com.functional.tests.Login" />
+			<class name="com.functional.tests.CreatePO" />
+			<class name="com.functional.tests.ExportImport" /> 
+			<class name="com.functional.tests.BuyersRegistration" /> 
+			<class name="com.functional.tests.VendorRegister" />
+			<class name="com.functional.tests.RepRegistration" />
+			<class name="com.functional.tests.ExportImport2" />
+			<class name="com.functional.tests.ImportAgency" />
+			<class name="com.functional.tests.ImportVendor" /> 
+			<class name="com.functional.tests.ImportBuyer" />   
+			<class name="com.functional.tests.CommissionTest" /> 
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+
